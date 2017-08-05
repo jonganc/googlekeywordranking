@@ -1,0 +1,54 @@
+{
+  "name": "googlekeywordranking",
+  "version": "1.0.0",
+  "description": "Get keyword rankings for a combination of domains and keywords",
+  "main": "googlekeywordranking.js",
+  "scripts": {
+    "compile": "babel src --out-dir dist --source-maps",
+    "watch": "babel src --out-dir dist --source-maps --watch",
+    "test": "npm run lint",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonganc/googlekeywordranking.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jonganc/googlekeywordranking/issues"
+  },
+  "homepage": "https://github.com/jonganc/googlekeywordranking#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "mz": "^2.6.0",
+    "qs": "^6.5.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4",
+    "source-map-support": "^0.4.15",
+    "url": "^0.11.0",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "4.3"
+          }
+        }
+      ]
+    ],
+    "sourceMaps": true,
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}

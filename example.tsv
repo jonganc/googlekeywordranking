@@ -1,0 +1,3 @@
+search term	url regex	max result pages
+football teams	(^|\.|/)und\.com	4	
+university	(^|\.|/)cmu\.edu	4	

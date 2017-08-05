@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+require('babel-polyfill');
+const gkrTsv = require('./dist/gkr-tsv');
+
+gkrTsv();
