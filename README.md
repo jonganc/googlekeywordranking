@@ -73,9 +73,9 @@ The input file should be a tab separated document (i.e. a TSV). See `example.tsv
 
 The first row is a header row. The first three columns of the first row **must be**
 
-    search term\turl regex\tmax result pages
+    search term⇥url regex⇥max result pages
 
-replacing `\t` with the tab character. The next columns are dates; the default format is YYYY/MM/DD. As mentioned above, though, if the `--date` option is used, the headers might be any string.
+replacing `⇥` with the tab character. The next columns are dates; the default format is YYYY/MM/DD. As mentioned above, though, if the `--date` option is used, the headers might be any string.
 
 Each subsequent row is one search term. The first three columns specify the settings for that term. The remaining columns give the ranking on a particular date.
 
