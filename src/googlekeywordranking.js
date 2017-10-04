@@ -239,7 +239,7 @@ async function processPage(input) {
       }
       
       // otherwise, proceed to next page.
-      // we rethrow the result so that we can ad stats if needed
+      // we rethrow the result so that we can add stats if needed
       throw await processPage({
         requestOpts: makeReqOptsForUrl(next),
         urlRegex,
@@ -271,7 +271,7 @@ function getStats($page) {
 
   const pageStats = new ResStats();
   // find num of results
-  let match = $page('#resultStats').text().match(/ ([0-9,]+) results/);
+  let match = $page('#resultStats').text().match(/([0-9,]+) results/);
   if (!match) {
     throw new Error('Format of results stats not as expected');
   }

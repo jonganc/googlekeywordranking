@@ -113,3 +113,8 @@ Example config.js:
 
 These options are added to the options object passed to [node's request module](https://github.com/request/request).
 
+# To do
+
+## Add non-quitting errors
+
+Add a class of errors that cause the program to skip the search term but not to quit. As an example, the error in `getStats`, if it happens three times, should case that terms to be skipped but not to quit.

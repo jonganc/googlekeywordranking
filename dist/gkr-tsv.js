@@ -11,7 +11,7 @@
 //  We do this to try and  keep OUTPUTPATH always in use.
 //  COLHEADERS is save to first row after REQUIREDHEADER
 var saveOutput = function () {
-  var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(outputObj, output) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(outputObj, output) {
     var numCols, paddedOutput;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -57,7 +57,7 @@ var saveOutput = function () {
 
 
 var main = function () {
-  var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
     var argv, inputFile, output, outputObj, colHeaders, curCol, err, idx, retries, line, result;
     return regeneratorRuntime.wrap(function _callee2$(_context2) {
       while (1) {
@@ -333,7 +333,7 @@ var main = function () {
 
 
 var mainWrapper = function () {
-  var _ref3 = _asyncToGenerator(regeneratorRuntime.mark(function _callee3() {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
     return regeneratorRuntime.wrap(function _callee3$(_context3) {
       while (1) {
         switch (_context3.prev = _context3.next) {

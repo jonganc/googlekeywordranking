@@ -39,7 +39,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 //     isn't found before the minimum of maxPagesToSearch and the length of
 //     _debugHtmlArray
 var processPage = function () {
-  var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(input) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(input) {
     var defaults, _Object$assign, requestOpts, urlRegex, maxPagesToSearch, pageNr, curResNr, _debugHtmlArray, response, curTime, $page, reqUrl, stats, next;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -217,7 +217,7 @@ var processPage = function () {
 
 // returns a result object indicating where the term was found
 var getRanking = exports.getRanking = function () {
-  var _ref3 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(_ref2) {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(_ref2) {
     var searchTerms = _ref2.searchTerms,
         urlRegex = _ref2.urlRegex,
         _ref2$maxPagesToSearc = _ref2.maxPagesToSearch,
@@ -272,7 +272,7 @@ var getRanking = exports.getRanking = function () {
 
 
 var getRankingArr = exports.getRankingArr = function () {
-  var _ref4 = _asyncToGenerator(regeneratorRuntime.mark(function _callee4(arr) {
+  var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(arr) {
     var _this6 = this;
 
     var failed;
@@ -283,7 +283,7 @@ var getRankingArr = exports.getRankingArr = function () {
             // indicates if any of the attempts so far have failed
             failed = false;
             return _context4.abrupt('return', Promise.all(arr.map(function () {
-              var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee3(searchOpts) {
+              var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(searchOpts) {
                 var result;
                 return regeneratorRuntime.wrap(function _callee3$(_context3) {
                   while (1) {
@@ -559,7 +559,7 @@ function getStats($page) {
 
   var pageStats = new ResStats();
   // find num of results
-  var match = $page('#resultStats').text().match(/ ([0-9,]+) results/);
+  var match = $page('#resultStats').text().match(/([0-9,]+) results/);
   if (!match) {
     throw new Error('Format of results stats not as expected');
   }
